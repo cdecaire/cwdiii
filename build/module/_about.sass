@@ -1,0 +1,98 @@
+// About
+.about
+  article
+    h1
+      grid-column: 2 / span 10
+      grid-row: 2
+      margin: 0 0 48px 0
+
+      span.dash
+        color: $primary
+        padding: 0 8px
+
+      @media only screen and (min-width:415px)
+        grid-column: 2 / span 8
+
+    div.story
+      grid-column: 2 / span 10
+      grid-row: auto
+      color: $black_50
+
+      @media only screen and (min-width:415px)
+        grid-column: 2 / span 8
+
+      @media only screen and (min-width:672px)
+        grid-column: 3 / span 8
+
+      @media only screen and (min-width:992px)
+        grid-column: 4 / span 6
+
+      p
+        +font-size(14)
+        font-family: $sans_serif_family
+        margin: 0 0 24px 0
+
+    div.profileimage
+      grid-column: 1 / span 12
+      grid-row: 1
+      margin: 0 0 48px 0
+      overflow: hidden
+      width: 100%
+
+      @media only screen and (min-width:992px)
+        grid-column: 6 / span 6
+
+      img
+        display: block
+        height: 100%
+        width: 100%
+
+.social
+  grid-column: 2 / span 10
+  grid-row: auto
+  padding: 0
+  margin: 24px 0 0 0
+
+  @media only screen and (min-width:672px)
+    grid-column: 11
+    grid-row: 3 / span 2
+    justify-self: end
+    width: 80px
+    margin: 8px 24px 0 0
+
+  li
+    +box-sizing(border-box)
+    +hide-text
+    background-color: $black_20
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 24px
+    border-radius: 2px
+    display: inline-block
+    height: 24px
+    margin: 0 16px 0 0
+    width: 24px
+
+    @media only screen and (min-width:672px)
+      display: block
+      margin: 0 auto 16px auto
+
+    &:hover
+      background-color: $primary
+
+    &.twitter
+      background-image: url('http://www.carldecaire.com.s3-website-us-east-1.amazonaws.com/imgs/twitter.svg')
+
+    &.instagram
+      background-image: url('http://www.carldecaire.com.s3-website-us-east-1.amazonaws.com/imgs/instagram.svg')
+
+    &.dribbble
+      background-image: url('http://www.carldecaire.com.s3-website-us-east-1.amazonaws.com/imgs/dribbble.svg')
+
+    &.email
+      background-image: url('http://www.carldecaire.com.s3-website-us-east-1.amazonaws.com/imgs/email.svg')
+
+    a
+      display: block
+      height: 32px
+      width: 32px

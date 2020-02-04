@@ -1,0 +1,149 @@
+// work
+.work
+  article
+    h1
+      grid-column: 2 / span 10
+      margin: 0 0 24px 0
+
+    figure.mobile
+      display: block
+      grid-column: 2 / span 10
+      margin: 0 0 48px 0
+      padding: 0
+
+      @media only screen and (min-width:672px)
+        gird-column: span 4
+
+        &:nth-child(odd)
+          grid-column: 2 / span 4
+
+        &:nth-child(even)
+          grid-column: 8 / span 4
+
+      @media only screen and (min-width:992px)
+        gird-column: span 3
+
+        &:nth-child(odd)
+          grid-column: 2 / span 3
+
+        &:nth-child(even)
+          grid-column: 6 / span 3
+
+      .no-chrome
+        grid-column: span 3
+        overflow: hidden
+        margin: 48px 0 24px 0
+
+        .no-scroll img
+          width: 100%
+
+      figcaption
+        +font-size(12)
+        color: $black_50
+        font-style: italic
+        font-weight: normal
+        grid-column: span 3
+
+    figure
+      display: contents
+      grid-column: 2 / span 10
+      margin: 0 0 48px 0
+      padding: 0
+
+      .chrome
+        grid-column: 2 / span 10
+        border-radius: 8px
+        overflow: hidden
+        border: 1px solid $black_5
+        margin: 48px 0 24px 0
+
+        .dots
+          background-color: $black_5
+          +font-size(32)
+          color: $black_20
+          display: block
+          font-weight: 500
+          height: 21px
+          letter-spacing: 1px
+          line-height: 4px
+          margin: 0
+          padding: 0
+          text-indent: 12px
+          width: 100%
+
+        .no-scroll
+          height: 100%
+
+          img
+            display: block
+            width: 100%
+
+        .scroll
+          position: relative
+          max-height: 720px
+          overflow-y: scroll
+
+          img
+            display: block
+            width: 100%
+
+      figcaption
+        +font-size(12)
+        color: $black_50
+        font-style: italic
+        font-weight: normal
+        grid-column: 2 / span 10
+
+      .meta
+        +font-size(12)
+        color: $black_50
+        grid-column: 2 / span 10
+        grid-row: auto
+        margin: 24px 0 0 0
+
+        @media only screen and (min-width:672px)
+          grid-column: 9 / span 3
+          grid-row: 2
+          margin: 0
+
+        strong
+          font-weight: 500
+          color: $black_80
+          margin-right: 4px
+
+        p
+          margin: 0
+
+      > p
+        +font-size(14)
+        grid-column: 2 / span 10
+        grid-row: auto
+        margin: 0
+        color: $black_50
+
+        @media only screen and (min-width:672px)
+          grid-column: 2 / span 6
+          grid-row: 2
+
+      .switcher
+        grid-column: 2 / span 10
+
+        @media only screen and (min-width:672px)
+          grid-column: 2 / span 10
+          grid-row: 3
+
+        ul
+          list-style: none
+          margin: 24px 0 0 0
+          padding: 0
+
+          li
+            +font-size(12)
+            display: inline-block
+            list-style: none
+            margin: 0
+            padding: 0 8px 0 0
+
+            a.selected
+              color: $primary
+              text-decoration: none

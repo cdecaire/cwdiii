@@ -1,0 +1,28 @@
+// footer
+
+footer
+  +font-size(12)
+  box-sizing: border-box
+  color: $black_50
+  display: grid
+  grid-template-columns: 5% repeat(10, 1fr) 5%
+  margin: 96px auto 32px auto
+  padding: 48px 0
+  width: 100%
+
+  @media only screen and (min-width:415px)
+    grid-template-columns: 10% repeat(10, 1fr) 10%
+
+  strong,
+  cite
+    font-family: $sans_serif_family
+    display: block
+
+  strong
+    grid-column: 2 / span 8
+    grid-row: 1
+
+  cite
+    grid-column: 2 / span 8
+    grid-row: 2
+

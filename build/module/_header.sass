@@ -1,0 +1,103 @@
+// Header
+.monogram
+    display: block
+    position: fixed
+    bottom: 48px
+    right: 24px
+    width: 80px
+    z-index: 99
+
+    a
+      position: relative
+      display: block
+      width: 80px
+      height: 80px
+
+      .arrow
+        position: absolute
+        top: 0
+        left: 0
+        width: 80px
+        height: 80px
+        +hide-text
+        background: transparent url('http://www.carldecaire.com.s3-website-us-east-1.amazonaws.com/imgs/cwdiii_monogram_up.svg') center no-repeat
+
+        &.up
+          +rotate(180)
+
+      .eye
+        +hide-text
+        height: 50px
+        left: 15px
+        position: absolute
+        top: 15px
+        width: 50px
+        background: transparent url('http://www.carldecaire.com.s3-website-us-east-1.amazonaws.com/imgs/cwdiii_monogram.svg') center no-repeat
+
+
+header
+  +font-size(12)
+  border-top: 4px solid $primary
+  box-sizing: border-box
+  display: grid
+  grid-template-columns: 5% repeat(10, 1fr) 5%
+  margin: 0 auto
+  padding: 48px 0
+  width: 100%
+  z-index: 99
+
+  @media only screen and (min-width:415px)
+    grid-template-columns: 10% repeat(10, 1fr) 10%
+
+  a
+    color: $black_80
+
+    &:hover
+      color: $primary
+
+  .name
+    grid-column: 2 / span 8
+    grid-row: 1
+    margin: 9px 0
+
+    @media only screen and (min-width:672px)
+      grid-column: 2 / span 3
+      grid-row: 1
+
+    span
+      display: block
+
+  .contact
+    grid-column: 2 / span 8
+    grid-row: 2
+    margin: 9px 0
+
+    @media only screen and (min-width:672px)
+      grid-column: 5 / span 4
+      grid-row: 1
+
+    span
+      display: block
+
+  nav
+    display: block
+    grid-column: span 2
+    grid-row: 1
+    margin: 9px 0
+
+    @media only screen and (min-width:672px)
+      grid-column: 9 / span 3
+      grid-row: 1
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      li
+        list-style: none
+        display: block
+
+        a.selected
+          color: $primary
+          text-decoration: none

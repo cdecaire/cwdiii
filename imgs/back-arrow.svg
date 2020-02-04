@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="10px" viewBox="0 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Back_to_Top</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-48.000000, -91.000000)" fill="#F05467" fill-rule="nonzero">
+            <g id="Scroll-Copy" transform="translate(55.000000, 95.500000) rotate(90.000000) translate(-55.000000, -95.500000) translate(50.000000, 88.000000)">
+                <path d="M5.532,0.108 L9.852,4.428 L9.3408,4.9392 L5.6328,1.2312 L5.6328,14.4 L4.9128,14.4 L4.9128,1.2312 L1.2048,4.9392 L0.6936,4.428 L5.0136,0.108 C5.1648,-0.036 5.3952,-0.036 5.532,0.108 Z" id="Back_to_Top" transform="translate(5.272800, 7.200000) scale(1, -1) translate(-5.272800, -7.200000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
