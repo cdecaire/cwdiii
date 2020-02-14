@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CWDIII - UI Design</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132141-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132141-4');
+    </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="monogram"><a href="#top"><span class="arrow">Sees</span><span class="eye">You</span></a></div>
+      <div class="name">
+        <span>Carl DeCaire</span>
+        <span>UI Design</span>
+      </div>
+      <div class="contact">
+        <span><a href="tel:1-614-352-3850">+1 614-352-3850</a></span>
+        <span><a href="mailto:cdecaire@gmail.com?subject=Hey there!">cdecaire@gmail.com</a></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="">Home</a></li>
+          <li><a href="./about.html" class="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="work">
+        <article>
+          <h1>Tracermedia</h1>
+          <figure>
+            <p>
+              Creative Direction for web sites, iOS appliations &amp; games for various clients from 2009 through 2011.</p>
+            <div class="meta">
+              <p><strong>Role:</strong> Creative Direction, UI/UX, HTML &amp; SASS</p>
+              <p><strong>Platforms:</strong> Web, iOS and Android</p>
+              <p><strong>Year:</strong> 2009-2011</p>
+            </div>
+            <div class="chrome">
+              <span class="dots">...</span>
+              <div class="no-scroll">
+                <img src="./imgs/work/gsx_01.jpg">
+              </div>
+            </div>
+            <figcaption>
+              Pitch for Global SX Events Inc.
+            </figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <div class="chrome alt">
+              <div class="no-scroll">
+                <img src="./imgs/work/readinglabs-01.png">
+              </div>
+            </div>
+            <figcaption>
+              Pitch for McGraw Hill Digital SRA Readling Labs
+            </figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure class="mobile">
+            <div class="no-chrome">
+              <div class="no-scroll">
+                <img src="./imgs/work/flymuch-01.png">
+              </div>
+            </div>
+            <figcaption>
+              Fly Much, Travel Companion
+            </figcaption>
+          </figure>
+          <figure class="mobile">
+            <div class="no-chrome">
+              <div class="no-scroll">
+                <img src="./imgs/work/flymuch-02.png">
+              </div>
+            </div>
+            <figcaption>
+              Fly Much, Travel Companion
+            </figcaption>
+          </figure>
+          <figure class="mobile">
+            <div class="no-chrome">
+              <div class="no-scroll">
+                <img src="./imgs/work/flymuch-03.png">
+              </div>
+            </div>
+            <figcaption>
+              Fly Much, Travel Companion
+            </figcaption>
+          </figure>
+      </section>
+    </main>
+    <footer>
+      <strong>No templates, made with love using HTML5 &amp; CSS3</strong>
+      <cite>&copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> Carl DeCaire. All Rights Reserved.</cite>
+    </footer>
+  </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/min/waypoints.min.js"></script>
+<script>
+$(document).ready(function() {
+$('.monogram a').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 400);
+    return false;
+    });
+
+  $('.work').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('header').addClass('down');
+      $('.monogram .arrow').addClass('up')
+    }
+    else {
+      $('header').removeClass('down')
+      $('.monogram .arrow').removeClass('up')
+    }
+  });
+});
+</script>
+
+</body>
+</html>
